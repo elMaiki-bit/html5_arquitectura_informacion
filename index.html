@@ -1,58 +1,4 @@
-<!-- **Objetivoshttp://127.0.0.1:3000/index.html
- Desarrollar una aplicacion web completa centradad en la aqrquetctura de la informacion utilizando html5
- **Requisitos
- Estos requisitos se validarán una vez se entregue el proyecto, por lo que hay que tener en cuenta cada uno de ellos:
- -Head: la etiqueta head debe de estar completa con todos los metadatos correctos, así como un favicon y un título.
- *Contenido del body
- -Encabezado: Logotipo o imagen representativa
 
--Menú de navegación: (De momento puede ser ficticio), pero debe de representar un contenido lógico para la aplicación. Por ejemplo: enlaces "falsos" o mediante id a contenido que aparece más adelante a lo largo de ella.
-
--Título principal de la página
-*Organización semántica:
-Section para difrentes secciones de la página 
--article para entradas de blog, noticias,etc.
--aside para contenido secundario
--figurte para imágenes con leyendas 
--headder y footer para encabezado y pie de página 
--main para el contenido principal
--no hay que usarlas todas obligatoriamente, pero una buena organización será muy valorable.
-**Etiquetas adicionales (Ejemplos
--h1, h2, etc. para títulos
--p para párrafos
--ul, ol para listas
--blockquote para citas
- -strong y em para énfasis 
--a para enlaces
-*Accesibilidad
--Usa etiquetas alt para describir las imágenes.
--Estructura el contenido de forma que sea fácil de leer y comprender.
--Todo lo que pueda aportar información para lectores de pantalla se valorará.
- *Pie de página
-Incluye la siguiente información de manera completa o parcial:
--Información de contacto
--Copyright (ficticio)
--Enlaces a redes sociales
- *Formulario
-Crea un formulario de contacto simple con los siguientes campos:
--Nombre
--Correo electrónico
--Asunto
--Mensaje
-Valida los campos del formulario para evitar errores (opcional).
-Otro tipo de formulario que se adecue a la temática también se dará por correcto.
-
-** Exigencia**
-
-La página web debe ser accesible y navegable sin necesidad de CSS.
-
-La estructura del código HTML debe ser clara, organizada y bien indentada. Puedes usar la extensión Prettier de VSCode para darle formato al documento. Para ello pulsa el segundo botón encima del código HTML en el programa, clica en "Dar formato al documento" y elige Prettier por defecto. Las próximas veces que des formato se hará automáticamente con esta extensión.
-
-Usa comentarios para explicar el código y su organización si lo ves necesario.
-
-Valida tu código HTML con un validador online.
- 
- -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,6 +7,7 @@ Valida tu código HTML con un validador online.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enala Atelier</title>
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="description" content="Pendientes de arcilla polimérica artesanales, hechos con mucho mimo y dedicación. Cada uno es único, se pueden personalizar y no pesan nada. Enviamos a toda España."/>
     <meta name="keywords" content="tienda, shop, pendientes, joyería, accesorios, pendientes elegantes, pendientes exclusivos, hecho a mano, arcilla polimerica"/>
     <meta name="author" content="Enala Atelier"/>
@@ -69,6 +16,8 @@ Valida tu código HTML con un validador online.
   <body>
 <header>
   <h3 style="text-align: center;">Envío Gratis para pedidos superiores a 40€ Península, Baleares Ceuta y Melilla y 60€ Canarias</h3>
+</header>
+<header>
 <nav>
   <ul>
 
@@ -77,57 +26,81 @@ Valida tu código HTML con un validador online.
 <li><a href="#inicio"><img src="image.jpeg" alt="Logotipo de la marca"  height="250px"></a></li>
 <li><a href="#Sobre mi">Sobre mi</a></li>
 <li><a href="#contacto">Contacto</a></li>
-
-  </li>
-
-
 </nav>
-
 </header>
-
-
 <main>
+  <section>
+
+<section class="bienvenida">
+  <h2>Bienvenid@s a Enala</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi accusantium aut quod, aliquid consequatur aliquam impedit delectus ea officiis eligendi laborum, perspiciatis a autem quam aperiam sequi voluptates voluptatibus nam.</p>
+  <a href="" class="boton">Explora!!</a>
+<div class="imagenbienvenida">
+  <ul>
+<li><img src="" alt="" height="250px"></li>
+<li><img src="" alt="" height="250px"></li>
+<li><img src="" alt="" height="250px"></li>
+<li><img src="" alt="" height="250px"></li>
+</ul>
+</div>
+</section>
+<div class="coleccion">
+<p>Sumergete en nuestra nueva colección de pendientes, donde el color, el brillo y la energía se fusionan para colabrorar la primavera. Cada diseño está pensado para aportar un toque vibrante a tu look.</p>
+<a href="" class="boton">Colección</a>
+
+</div>
+<div class="collage-coleccion">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+
+
+</div>
+  </section>
 <section>
-  <h2>Novedades</h2>
-  <button>Ver más</button>
+  <img src="" alt="" class="imagensobrenosotros">
+  <div class="nuestrahistoria">
+    <h2>Nuestra Historia</h2>
+    <p>Descubre la pasión detrás de cada pieza de joyería en Enala Atelier. Cada pendiente de arcilla polímerica es únic, hecho a mano con amor y dedicación. Nuestro objetivo es crear joyas originales que te hagan sentir especial.</p>
+  </div>
+
+</section>
+<section class="destacados">
+  <h2>Destacados</h2>
   <ul>
     <li><img src="" alt="">
       <h3>Producto 1</h3> 
-      <p>Precio: $50</p> 
+      <p>Precio: 50€</p> 
       <button>Agregar al carrito</button></li>
     <li><img src="" alt=""></li>
-    <h3>Producto 1</h3> 
-    <p>Precio: $50</p> 
+    <h3>Producto 2</h3> 
+    <p>Precio: 50€</p> 
     <button>Agregar al carrito</button></li>
     <li><img src="" alt=""></li>
-    <h3>Producto 1</h3> 
-    <p>Precio: $50</p> 
+    <h3>Producto 3</h3> 
+    <p>Precio: 50€</p> 
     <button>Agregar al carrito</button></li>
 
   </ul>
 </section>
-<section>
-  <h2>Personalizar</h2>
-  <button>Ver más</button>
-  <img src="" alt="">
-
-</section>
-
 </main>
 
+    <div class="contenido-footer">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a>
 
-<footer>
-<p>&copy; 2025 Enala Atelier</p>
-<div class="iconmedia">
-    <a href=https://www.tiktok.com/?lang=es>
-      <img src=https://img.icons8.com/?size=100&id=123922&format=png&color=000000 alt="Twitter">
-    </a>
-    <a href="https://www.instagram.com">
-      <img src=https://img.icons8.com/?size=100&id=Plswr633TJUP&format=png&color=000000 alt="Instagram">
-    </a>
-</div>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ibiza, España</span>
+
+            <a href="https://www.tiktok.com/@tudusuario">
+                <i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/tudusuario">
+                <i class="fab fa-instagram"></i></a>
+    </div>
 </footer>
-
   </body>
 
 
